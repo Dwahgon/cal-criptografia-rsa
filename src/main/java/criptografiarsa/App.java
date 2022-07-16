@@ -1,13 +1,12 @@
 package criptografiarsa;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
-
 import criptografiarsa.controller.RSAKeyGenerator;
 import criptografiarsa.model.PrivateKey;
 import criptografiarsa.model.RSAKeyPair;
 import criptografiarsa.view.Prompts;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class App {
 
@@ -98,6 +97,7 @@ public class App {
 
         try {
             RSAKeyGenerator.decryptFile(encryptedFile, privateKey);
+            System.out.println();
         } catch (IOException e) {
             System.out.println("Erro de entrada e saida ao tentar salvar arquivo criptografado");
         }

@@ -93,7 +93,7 @@ public abstract class RSAKeyGenerator {
                 System.out.print((char) m);
             }
         }
-        System.out.println();
+//        System.out.println();
     }
 
 // Algoritmos. Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Cliford
